@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom"; // Import NavLink instead of Link
 import HamburgerMenu from "./HamburgerMenu";
 import logo from "../images/puffadder.jpg";
 
@@ -12,26 +12,55 @@ const Navbar = () => {
 
   return (
     <nav>
-      <Link to="/" style={{ display: "flex", alignItems: "center" }}>
+      <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
         <img src={logo} alt="Logo" style={{ height: "50px" }} />
-      </Link>
+      </NavLink>
       <HamburgerMenu />
       <ul>
         <li>
-          <Link to="/community">Community</Link>
+          <NavLink
+            to="/community"
+            activeClassName="active-link" // Add active class
+            onClick={() => setDropdownOpen(false)} // Optional: close dropdown on link click
+          >
+            Community
+          </NavLink>
         </li>
         <li>
-          <Link to="/blog">Blog</Link>
+          <NavLink
+            to="/blog"
+            activeClassName="active-link"
+            onClick={() => setDropdownOpen(false)}
+          >
+            Blog
+          </NavLink>
         </li>
-
         <li>
-          <Link to="/joinus">Join Us</Link>
+          <NavLink
+            to="/joinus"
+            activeClassName="active-link"
+            onClick={() => setDropdownOpen(false)}
+          >
+            Join Us
+          </NavLink>
         </li>
         <li>
-          <Link to="/store">Store</Link>
+          <NavLink
+            to="/store"
+            activeClassName="active-link"
+            onClick={() => setDropdownOpen(false)}
+          >
+            Store
+          </NavLink>
         </li>
         <li>
-          <Link to="/donate">Donate</Link>
+          <NavLink
+            to="/donate"
+            activeClassName="active-link"
+            onClick={() => setDropdownOpen(false)}
+          >
+            Donate
+          </NavLink>
         </li>
       </ul>
     </nav>
