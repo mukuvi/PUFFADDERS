@@ -1,9 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import storeData from "./storeData";
 
 const Store = () => {
+  const storeRef = useRef(null);
+
+  const handleKeyDown = (event) => {
+    if (storeRef.current) {
+      if (event.key === "ArrowRight") {
+        storeRef.current.scrollBy({ left: 200, behavior: "smooth" });
+      } else if (event.key === "ArrowLeft") {
+        storeRef.current.scrollBy({ left: -200, behavior: "smooth" });
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
   return (
-    <div className="store">
+    <div className="store" ref={storeRef}>
       <h2>Puff Store</h2>
       <div className="store-items">
         {storeData.map((item) => (
