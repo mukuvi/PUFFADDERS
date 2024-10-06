@@ -23,21 +23,9 @@ const Navbar = () => {
         <li>
           <Link to="/blog">Blog</Link>
         </li>
+
         <li>
-          <div className="dropdown">
-            <button onClick={toggleDropdown} className="dropbtn">
-              Join Us
-            </button>
-            {dropdownOpen && (
-              <div className="dropdown-content">
-                <Link to="/joinus/cybersecurity">Cybersecurity</Link>
-                <Link to="/joinus/software-development">
-                  Software Development
-                </Link>
-                <Link to="/joinus/data-science">Data Science</Link>
-              </div>
-            )}
-          </div>
+          <Link to="/joinus">Join Us</Link>
         </li>
         <li>
           <Link to="/store">Store</Link>
