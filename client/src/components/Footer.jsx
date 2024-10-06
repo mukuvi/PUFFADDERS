@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <p>&copy; 2024 Puffadders Community. All rights reserved.</p>
         <div className="footer-links">
           <a
             href="https://github.com/puffadders"
@@ -35,6 +34,7 @@ const Footer = () => {
             LinkedIn
           </a>
         </div>
+        <p>&copy; 2024 Puffadders Community. All rights reserved.</p>
       </div>
     </footer>
   );
