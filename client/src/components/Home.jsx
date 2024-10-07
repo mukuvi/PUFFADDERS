@@ -24,6 +24,7 @@ const services = [
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const typedRef = React.useRef(null); // Create a ref for Typed instance
 
   useEffect(() => {
     const options = {
@@ -32,18 +33,24 @@ const Home = () => {
       backSpeed: 50,
       loop: true,
     };
-    new Typed(".typed", options);
+
+    // Check if typedRef is assigned
+    if (typedRef.current) {
+      new Typed(typedRef.current, options);
+    }
 
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % services.length);
     }, 5000);
 
-    return () => clearInterval(intervalId);
+    return () => {
+      clearInterval(intervalId);
+    };
   }, []);
 
   return (
     <div className="home">
-      <h1 className="typed"></h1>
+      <h1 className="typed" ref={typedRef}></h1> {/* Attach ref here */}
       <div className="team-pages">
         {services.map((service, index) => (
           <div

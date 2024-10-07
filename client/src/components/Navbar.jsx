@@ -1,66 +1,28 @@
-import React, { useState } from "react";
-import { NavLink } from "react-router-dom"; // Import NavLink instead of Link
-import HamburgerMenu from "./HamburgerMenu";
+import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/puffadder.jpg";
 
 const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   return (
     <nav>
-      <NavLink to="/" style={{ display: "flex", alignItems: "center" }}>
+      <Link to="/" style={{ display: "flex", alignItems: "center" }}>
         <img src={logo} alt="Logo" style={{ height: "50px" }} />
-      </NavLink>
-      <HamburgerMenu />
+      </Link>
       <ul>
         <li>
-          <NavLink
-            to="/community"
-            activeClassName="active-link" // Add active class
-            onClick={() => setDropdownOpen(false)} // Optional: close dropdown on link click
-          >
-            Community
-          </NavLink>
+          <Link to="/community">Community</Link>
         </li>
         <li>
-          <NavLink
-            to="/blog"
-            activeClassName="active-link"
-            onClick={() => setDropdownOpen(false)}
-          >
-            Blog
-          </NavLink>
+          <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <NavLink
-            to="/joinus"
-            activeClassName="active-link"
-            onClick={() => setDropdownOpen(false)}
-          >
-            Join Us
-          </NavLink>
+          <Link to="/joinus">Join Us</Link>
         </li>
         <li>
-          <NavLink
-            to="/store"
-            activeClassName="active-link"
-            onClick={() => setDropdownOpen(false)}
-          >
-            Store
-          </NavLink>
+          <Link to="/store">Store</Link>
         </li>
         <li>
-          <NavLink
-            to="/donate"
-            activeClassName="active-link"
-            onClick={() => setDropdownOpen(false)}
-          >
-            Donate
-          </NavLink>
+          <Link to="/donate">Donate</Link>
         </li>
       </ul>
     </nav>
