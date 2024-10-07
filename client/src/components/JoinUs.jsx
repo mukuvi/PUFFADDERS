@@ -4,11 +4,7 @@ const JoinUs = () => {
   return (
     <div className="join-us-container">
       <h2 className="join-us-title">Join Us</h2>
-      <p className="join-us-description">
-        We are the best community for aspiring professionals! Join us to
-        collaborate, learn, and grow together in an inclusive and innovative
-        environment.
-      </p>
+      <p className="join-us-description">Hack Like There's No Tomorrow!.</p>
 
       <div className="join-us-fields">
         <div className="join-us-field">

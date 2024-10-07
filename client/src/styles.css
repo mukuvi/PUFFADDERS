@@ -49,8 +49,7 @@ nav a {
 nav a:hover {
   color: #007bff;
 }
-
-/*Join US*/
+/* Join US */
 .join-us-container {
   max-width: 800px;
   margin: 0 auto;
@@ -132,6 +131,20 @@ nav a:hover {
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .join-us-fields {
+    flex-direction: column;
+    animation: none;
+  }
+
+  .join-us-field {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
   }
 }
 
