@@ -24,6 +24,7 @@ const Store = () => {
   return (
     <div className="store" ref={storeRef}>
       <h2>Puff Store</h2>
+      <small>Support us by purchasing from our Puff Store!</small>
       <div className="store-items">
         {storeData.map((item) => (
           <div className="store-item" key={item.id}>
