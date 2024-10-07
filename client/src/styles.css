@@ -124,7 +124,6 @@ nav a:hover {
   background-color: #0056b3;
 }
 
-/* Animation Keyframes */
 @keyframes scroll {
   0% {
     transform: translateX(100%);
@@ -134,17 +133,22 @@ nav a:hover {
   }
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
+  .join-us-container {
+    margin-bottom: 2rem;
+  }
+
   .join-us-fields {
     flex-direction: column;
     animation: none;
+    align-items: center;
   }
 
   .join-us-field {
     margin-right: 0;
     margin-bottom: 1rem;
     width: 100%;
+    text-align: center;
   }
 }
 
