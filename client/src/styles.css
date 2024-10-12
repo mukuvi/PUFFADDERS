@@ -459,6 +459,25 @@ button:hover {
   margin-top: 50px;
 }
 
+/*Notfound*/
+.notfound {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Arial, sans-serif;
+}
+.notfound-header {
+  font-size: 80px;
+  color: #e74c3c;
+  margin: 0;
+}
+.notfound-title {
+  font-size: 24px;
+  color: #34495e;
+}
+.notfound-foot {
+  font-size: 18px;
+  color: #7f8c8d;
+}
 /* Footer Styles */
 .footer {
   background-color: #151f30;
