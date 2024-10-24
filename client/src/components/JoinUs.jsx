@@ -14,7 +14,7 @@ const JoinUs = () => {
           </p>
           <a
             className="field-link"
-            href="https://github.com/orgs/puffadders/teams/cybersecurity-team"
+            href="https://discord.com/invite/KgygxrfGNH"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -28,7 +28,7 @@ const JoinUs = () => {
           </p>
           <a
             className="field-link"
-            href="https://github.com/orgs/puffadders/teams/software-development-team"
+            href="https://discord.com/invite/KgygxrfGNH"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -43,7 +43,7 @@ const JoinUs = () => {
           </p>
           <a
             className="field-link"
-            href="https://github.com/orgs/puffadders/teams/data-science-team"
+            href="https://discord.com/invite/KgygxrfGNH"
             target="_blank"
             rel="noopener noreferrer"
           >
