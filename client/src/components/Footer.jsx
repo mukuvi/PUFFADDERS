@@ -34,7 +34,8 @@ const Footer = () => {
             LinkedIn
           </a>
         </div>
-        <p>&copy;{ new new Date().getFullYear()} Puffadders Community. All rights reserved.</p>
+       <p>&copy;<script>document.write(new Date().getFullYear());</script> Puffadders Community. All rights reserved.</p>
+
       </div>
     </footer>
   );
