@@ -23,7 +23,7 @@ const Community = () => {
           <FaTelegram />
         </a>
         <a
-          href="https://discord.com/invite/KgygxrfGNH"
+          href="https://discord.gg/xqUWHBAYN9"
           target="_blank"
           rel="noopener noreferrer"
         >
